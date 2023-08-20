@@ -2,19 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //Images
-import IronFlame from './img/ironflame.jpg';
+import IronFlame from './styles/img/ironflame.jpg';
+
+//CSS
+
+import './styles/index.css'
 
 function BookList (){
 return( 
-    <>
-      <Book/>
-    </>
+    <div className="wrapper">
+      <Book className="one"/>
+      <Book className="two"/>
+      <Book className="three"/>
+    </div>
   )
 }
 
 const Book = () => {
 return(
-  <section>
+  <section className="book">
     <BookImage />
     <BookTitle />
     <BookAuthor />
